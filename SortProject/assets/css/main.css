@@ -3062,7 +3062,7 @@ input, select, textarea {
 		}
 
 		.spotlight:before {
-			background-image: url("images/overlay.png");
+			background-image: none;
 			content: '';
 			display: block;
 			height: 100%;
@@ -3457,7 +3457,7 @@ input, select, textarea {
 	#banner {
 		background-attachment: fixed;
 		background-color: #272833;
-		background-image: url("../../images/banner.jpg");
+		background-image: url("images/background5.jpg");
 		background-position: center center;
 		background-size: cover;
 		box-shadow: 0 0.25em 0.5em 0 rgba(0, 0, 0, 0.25);
@@ -3467,7 +3467,7 @@ input, select, textarea {
 		z-index: 21;
 	}
 	#five {
-    background-image: url("../../images/background5.jpg");
+  
 }
 
 		#banner:before {
@@ -3477,6 +3477,8 @@ input, select, textarea {
 			vertical-align: middle;
 			width: 1%;
 		}
+
+
 
 		#banner:after {
 			background-image: -moz-linear-gradient(top, rgba(23, 24, 32, 0.95), rgba(23, 24, 32, 0.95)), url("images/overlay.png");;
