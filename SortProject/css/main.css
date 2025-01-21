@@ -4113,5 +4113,31 @@ html.no-csstransitions .home-content__main {
 .custom-link:hover {
     text-decoration: underline; /* Underline on hover (optional, already underlined by default) */
 }
+/* Style the sliding image */
+.sliding-image {
+    position: absolute;
+    bottom: 20px;  /* Distance from the bottom of the section */
+    left: 20px;    /* Distance from the left of the section */
+    width: 250px;  /* Adjust the size as necessary */
+    height: auto;
+    opacity: 0;    /* Start hidden */
+    transform: translateX(-100%); /* Start the image off-screen to the left */
+    animation: slideIn 1s ease-out forwards; /* Apply animation */
+}
 
+/* Keyframe for sliding in the image */
+@keyframes slideIn {
+    0% {
+        opacity: 0;
+        transform: translateX(-100%); /* Start off-screen */
+    }
+    50% {
+        opacity: 0.5; /* Optionally, make it semi-visible in the middle of the animation */
+        transform: translateX(10%); /* Midway point */
+      }
+    100% {
+        opacity: 1;
+        transform: translateX(0); /* End at its natural position */
+    }
+}
 /*# sourceMappingURL=main.css.map */
